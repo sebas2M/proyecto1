@@ -32,9 +32,14 @@ function App() {
   }
   return (
     <div>
-      <Countdown ref={countdown} date={Date.now() + 10000}  autoStart={false} onMount={onMount}/>
+      <p className='counter'>
+        <Countdown ref={countdown} date={Date.now() + 10000}  autoStart={false} onMount={onMount}/>
+      </p>
       <button onClick={startCountdown}>Start</button>
       <button onClick={stopCountdown}>Stop</button>
+      <p>
+        2+2
+      </p>
     </div>
   );
 }
